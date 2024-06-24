@@ -1,0 +1,16 @@
+{% extends 'without_banner.html' %}
+
+
+{% block content %}
+
+{% if messages %}
+<div class="message-container">
+{% for message in messages %}
+    <li class="{{message.tags}}">{{ message }}</li> 
+{% endfor %}
+</div>
+{% else %}
+
+{% include 'order_container.html' %}
+{% endif %}
+{% endblock content %}

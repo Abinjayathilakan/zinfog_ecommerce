@@ -1,0 +1,22 @@
+{% load static %}
+<div class="navbar">
+    <div class="logo">
+        <a href=""><img src="{% static 'images/thrift.png' %}" alt="logo" width="125px"></a>
+    </div>
+    <nav>
+        <ul id="MenuItems">
+            
+            <li><a href="{% url 'shop_customerList' %}">Customers</a></li>
+            <li><a href="{% url 'show_products' %}">Add Products</a></li>
+            
+          
+           
+       
+            <li><a href="">Orders</a></li>
+            <li><a href="{% url 'sign_out' %}">Logout</a></li>
+         
+            
+        </ul>
+    </nav>
+
+</div>
